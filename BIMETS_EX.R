@@ -2,6 +2,7 @@ library(usethis)
 #install.packages("bimets")
 library(bimets)
 
+#See the link https://rviews.rstudio.com/2021/01/22/sem-time-series-modeling/
 #define the Klein model
 kleinModelDef <- "
 MODEL
@@ -189,4 +190,3 @@ plot(kleinModel$modelData$y)
 
 
 
-g
