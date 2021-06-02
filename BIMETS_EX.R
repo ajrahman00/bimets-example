@@ -184,12 +184,12 @@ kleinModel <- SIMULATE(kleinModel
 #get forecasted GNP
 TABIT(kleinModel$simulation$y)
 
-ts.plot(kleinModel$simulation$y, col = "red")
+ts.plot(kleinModel$simulation$y, col = "red", ylab = "Klein Model GNP: Forecast")
 
-ts.plot(kleinModel$modelData$y, col = "blue")
+ts.plot(kleinModel$modelData$y, col = "blue", ylab = "Klein Model GNP: Historical")
 
-ts.plot(kleinModel$simulation$y, kleinModel$modelData$y, gpars = list(col = c("red", "blue")))
-
+ts.plot(kleinModel$simulation$y, kleinModel$modelData$y, gpars = list(col = c("red", "blue")),
+        ylab = "Klein Model GNP: Actual and Forecast")
 
 
 
